@@ -955,7 +955,7 @@ ul.timeline li .data .text {
 .pitems .pubmain {
 	background: #fefefe;
 	padding: 25px 25px 35px 60px;
-	min-height: 130px;
+	min-height: 170px;
 	position: relative;
 
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
