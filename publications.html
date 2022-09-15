@@ -125,7 +125,7 @@
                                     <h2 class="title">Publications</h2>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4><p>Selected International Conference Papers: &nbsp  <b>RTSS</b> 16, <b>RTAS</b> 6, <b>ECRTS</b> 1, <b>EMSOFT</b> 1, <b>ICCPS</b> 2, <b>e-Energy</b> 1</p>
+                                            <h4><p>Selected International Conference Papers: &nbsp  <b>RTSS</b> 19, <b>RTAS</b> 6, <b>ECRTS</b> 1, <b>EMSOFT</b> 1, <b>ICCPS</b> 2, <b>e-Energy</b> 1</p>
                                             <p>Selected International Journal Papers: &nbsp  <b>TPDS</b> 7, <b>TC</b> 4, <b>TSE</b> 1, <b>IoT-J</b> 2, <b>TECS</b> 1, <b>TVCG</b> 1, <b>RTSJ</b> 1, <b>JSS</b> 8, <b>TVT</b> 1</p></h4>
                                             <br>
                                         </div> 
@@ -176,7 +176,179 @@
                                             <ol reversed="reversed" class="normal">
 <!-------------------------------- Selected -------------------------------->
 
+                                                <div class="item mix cpaper spaper" data-year="202212">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <!--<a href="" class="tooltips" title="Bib" target="_blank">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>-->
+                                                            <a href="https://doi.org/10.1109/" class="tooltips" title="Link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="./papers/" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle"><li>Response Time Analysis for Real-Time Global Gang Scheduling  </h4>
+                                                        <div class="pubauthor"> <strong>Seongtae Lee</strong>, <strong>Seunghoon Lee</strong>, and <strong>Jinkyu Lee</strong></div>
+                                                        <div class="pubcite">To appear in the 43rd IEEE Real-Time Systems Symposium (RTSS), pp. , Houston, USA, December 2022 </div>
+                                                        <span class="label label-primary">Selected</span><span class="label label-warning">Conference Paper</span>
+                                                    </div>     
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> This paper aims at developing a tight schedulability
+analysis for real-time global gang scheduling, in which threads
+of each task subject to timing requirements are assigned to
+multiple processors in parallel (i.e., following the rigid gang
+task model). Focusing on the RTA (Response Time Analysis)
+framework known to exhibit high schedulability performance
+for other task models, we address two following issues: i) how to
+generalize the existing RTA framework to gang scheduling and
+utilize existing RTA components of other task models for the
+generalized framework, and ii) how to incorporate important
+characteristics of gang scheduling into the RTA framework
+in a systematic way to minimize the framework's pessimism
+in judging schedulability. By addressing the issues, our RTA
+framework enables to derive tight schedulability analysis for
+EDF, FP and potentially more scheduling algorithms for real-time
+global gang scheduling. Also, our simulation results demonstrate
+that the proposed RTA framework outperforms/complements
+existing studies for real-time global/non-global gang scheduling,
+in terms of schedulability performance.
+                                                        </p>
+                                                        <br>
+                                                        <h4>Bibtex</h4>
+                                                        <p>
+                                                        </p>
+                                                        <br>
+                                                        <h4>Conference Information</h4>
+                                                        <p>
+                                                        </p>
+                                                    </div>  
+                                                </div>
 
+                                                <div class="item mix cpaper spaper" data-year="202212">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <!--<a href="" class="tooltips" title="Bib" target="_blank">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>-->
+                                                            <a href="https://doi.org/10.1109/" class="tooltips" title="Link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="./papers/" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle"><li>Design and Timing Guarantee for Non-Preemptive Gang Scheduling  </h4>
+                                                        <div class="pubauthor"> <strong>Seongtae Lee</strong>, Nan Guan, and <strong>Jinkyu Lee</strong></div>
+                                                        <div class="pubcite">To appear in the 43rd IEEE Real-Time Systems Symposium (RTSS), pp. , Houston, USA, December 2022 </div>
+                                                        <span class="label label-primary">Selected</span><span class="label label-warning">Conference Paper</span>
+                                                    </div>     
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> Due to its efficient and predictable utilization of
+modern computing units, recent studies have paid attention to
+gang scheduling in which all threads of a real-time task should
+be concurrently executed on different processors. However, the
+studies have been biased to preemptive gang scheduling, although
+non-preemptive gang scheduling (NPG) is practical for inherently
+non-preemptive tasks and tasks that incur large preemption over-
+head. In this paper, focusing on a new type of priority-inversion
+incurred by NPG, we design a generalized NPG framework,
+called NPG*, under which each task has an option to allow or dis-
+allow the situation that incurs the priority-inversion specialized
+for NPG. To demonstrate the effectiveness of NPG* in terms
+of timing guarantees, we target NPG*-FP by employing fixed-
+priority scheduling (FP) as a prioritization policy, and develop
+the first NPG*-FP schedulability test and its improved version
+under a given assignment of the allowance/disallowance option to
+each task. We then develop the optimal allowance/disallowance
+assignment algorithm, which finds an assignment (if exists) that
+makes a target task set schedulable by the proposed schedula-
+bility tests. Via simulations, we demonstrate that the assignment
+algorithm associated with the schedulability tests for NPG*-FP
+can find a number of additional schedulable task sets, each of
+which has not been covered by the traditional NPG framework.
+                                                        </p>
+                                                        <br>
+                                                        <h4>Bibtex</h4>
+                                                        <p>
+                                                        </p>
+                                                        <br>
+                                                        <h4>Conference Information</h4>
+                                                        <p>
+                                                        </p>
+                                                    </div>  
+                                                </div>
+
+                                                <div class="item mix cpaper spaper" data-year="202212">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <!--<a href="" class="tooltips" title="Bib" target="_blank">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>-->
+                                                            <a href="https://doi.org/10.1109/" class="tooltips" title="Link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="./papers/" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle"><li>RT-MOT: Confidence-Aware Real-Time Scheduling Framework for Multi-Object Tracking Tasks  </h4>
+                                                        <div class="pubauthor"> Donghwa Kang, <strong>Seunghoon Lee</strong>, Hoon Sung Chwa, Seung-Hwan Bae, Chang Mook Kang, <strong>Jinkyu Lee</strong> and Hyeongboo Baek   </div>
+                                                        <div class="pubcite">To appear in the 43rd IEEE Real-Time Systems Symposium (RTSS), pp. , Houston, USA, December 2022 </div>
+                                                        <span class="label label-primary">Selected</span><span class="label label-warning">Conference Paper</span>
+                                                    </div>     
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> 
+                                                            Different from existing MOT (Multi-Object Tracking) techniques that usually aim at improving tracking accuracy
+and average FPS, real-time systems such as autonomous vehicles
+necessitate new requirements of MOT under limited computing
+resources: (R1) guarantee of timely execution and (R2) high
+tracking accuracy. In this paper, we propose RT-MOT, a novel
+system design for multiple MOT tasks, which address R1 and
+R2. Focusing on multiple choices of a workload pair of detection
+and association, which are two main components of the tracking-
+by-detection approach for MOT, we tailor a measure of object
+confidence for RT-MOT and develop how to estimate the measure
+for the next frame of each MOT task. By utilizing the estimation,
+we make it possible to predict tracking accuracy variation
+according to different workload pairs to be applied to the next
+frame of an MOT task. Next, we develop a novel confidence-
+aware real-time scheduling framework, which offers an offline
+timing guarantee for a set of MOT tasks based on non-preemptive
+fixed-priority scheduling with the smallest workload pair. At
+run-time, the framework checks the feasibility of a priority-
+inversion associated with a larger workload pair, which does not
+compromise the timing guarantee of every task, and then chooses
+a feasible scenario that yields the largest tracking accuracy
+improvement based on the proposed prediction. Our experiment
+results demonstrate that RT-MOT significantly improves overall
+tracking accuracy by up to 1.5×, compared to existing popu-
+lar tracking-by-detection approaches, while guaranteeing timely
+execution of all MOT tasks.
+                                                        </p>
+                                                        <br>
+                                                        <h4>Bibtex</h4>
+                                                        <p>
+                                                        </p>
+                                                        <br>
+                                                        <h4>Conference Information</h4>
+                                                        <p>
+                                                        </p>
+                                                    </div>  
+                                                </div>
 
 
                                                 <div class="item mix jpaper spaper" data-year="202211">
@@ -2317,7 +2489,7 @@ In this paper, we propose an efficient way of predicting the power requirements 
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p>
-                                                           In this paper, we focus on splitting a task into multiple sub-tasks to improve schedulability performance for a set of tasks subject to timing constraints. Targeting FPS (Fixed Priority Scheduling) as a scheduling algorithm and RTA (Response Time Analysis) as a schedulability analysis on a multiprocessor platform, we develop a systematic method to utilize the task split, which addresses (i) how to apply the task split without violating the timing requirement of the original tasks and (ii) how to apply each task so as to make an unschedulable task set to be schedulable. Our simulation results demonstrate that RTA with the method finds 16.1%–19.4% (on average) additional task sets that were not proven schedulable by the vanilla RTA.
+                                                           In this paper, we focus on splitting a task into multiple sub-tasks to improve schedulability performance for a set of tasks subject to timing constraints. Targeting FPS (Fixed Priority Scheduling) as a scheduling algorithm and RTA (Response Time Analysis) as a schedulability analysis on a multiprocessor platform, we develop a systematic method to utilize the task split, which addresses (i) how to apply the task split without violating the timing requirement of the original tasks and (ii) how to apply each task so as to make an unschedulable task set to be schedulable. Our simulation results demonstrate that RTA with the method finds 16.1%?19.4% (on average) additional task sets that were not proven schedulable by the vanilla RTA.
 tests.
                                                         </p>
                                                         <br>
