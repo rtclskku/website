@@ -280,7 +280,29 @@
                                                     </div>     
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
-                                                        <p> 
+                                                        <p> Unlike existing accuracy-centric multi-object tracking (MOT), MOT
+subsystems for autonomous vehicles (AVs) must accurately perceive
+the surrounding conditions of the vehicle and timely deliver the
+perception results to the control subsystems before losing stability.
+In this paper, we proposed MOT-AS (Multi-Object Tracking systems
+capturing Accuracy and Stability), a novel handover-aware
+MOT execution and scheduling framework tailored for AVs with
+multi-cameras, which aims to maximize tracking accuracy without
+sacrificing system stability. Given the resource limitations inherent
+to AVs, MOT-AS partitions the handover-aware MOT execution
+into two distinct sub-executions: tracking handover objects that
+move across multiple cameras (referred to as global association) and
+those that move within a single camera (termed local association).
+It selectively performs the global association only when necessary
+and carries out local association with multiple execution options to
+explore the trade-off between accuracy and stability. Building upon
+MOT-AS, we developed a new scheduling framework encompassing
+a new MOT task model, offline stability analysis, and online
+scheduling algorithm to maximize accuracy without compromising
+stability. We implemented MOT-AS on both high-end and embedded
+GPU platforms using the Nuscenes dataset, demonstrating
+enhanced tracking accuracy and stability over conventional MOT
+systems, irrespective of their handover considerations.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
@@ -318,6 +340,30 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        Among CT (Computed Tomography) techniques that produce crosssection
+images by acquiring X-ray data from multiple angles around
+the individual, CBCT (Cone Beam CT) that collects the data through
+cone beam is popular due to its potential to reduce radiation risks.
+Although employing low-dose and sparse-view CBCT is a cornerstone
+approach to reducing radiation risks, reconstructing CBCT
+from noisy and sparsely-acquired cone beam scans often result in
+significant artifacts due to ill-posed inverse problem.
+In this paper, we aim to suppress the artifacts derived from reconstructing
+CBCT. To this end, we target the well-known existing
+approach ASD-POCS (Adaptive Steepest Descent with Projections
+Onto Convex Sets), focus on its downside of potentially introducing
+over-smoothing near edges and removing intricate fine structures,
+and develop an advanced ASD-POCS strategy that addresses the
+downside by leveraging prior image information. Our approach
+to integrating the prior information not only maintains structural
+integrity (without compromising edge detail or erasing fine structures)
+but also diminishes artifacts, thereby counteracting noise
+and blur to a significant extent. Our solution underwent stringent
+testing using both simulated data and publicly available datasets.
+The testing results demonstrate that the proposed technique is
+robust to the prevailing challenges in sparse-view CBCT reconstruction,
+skillfully mitigating artifacts (compared to contemporary
+state-of-the-art methods) while safeguarding intricate structures.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
