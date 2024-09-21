@@ -126,7 +126,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h4><b><i>IEEE Real-Time Systems Symposium</i> (RTSS)</b>: <b><i>Top 1 RT onference, BK21+ IF4, around 30 papers yearly published</i></b> <br>
-                                            &nbsp&nbsp&nbsp- <b>21 papers</b> published in total<br>
+                                            &nbsp&nbsp&nbsp- <b>22 papers</b> published in total<br>
                                             &nbsp&nbsp&nbsp- <b>13 consecutive years</b> published (2012-2024)</p>
                                             <p><b><i>Other Top-tier International Conference Papers</i></b> &nbsp  <br>
                                             &nbsp&nbsp&nbsp- <b>MobiSys</b> 1, <b>RTAS</b> 7, <b>DAC</b> 1, <b>EMSOFT</b> 2, <b>ECRTS</b> 1, <b>ICCPS</b> 2, <b>e-Energy</b> 1, <b>SAC</b> 2</p>
@@ -181,6 +181,57 @@
                                             <ol reversed="reversed" class="normal">
 <!-------------------------------- Selected -------------------------------->
 
+                                     <div class="item mix cpaper spaper" data-year="202412">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <!--<a href="" class="tooltips" title="Bib" target="_blank">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>-->
+                                                            <a href="" class="tooltips" title="Link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle"><li>Mixed-Criticality Federated Scheduling for Relaxed-Deadline DAG Tasks</h4>
+                                                        <div class="pubauthor"> Fei Guan, <strong>Jinkyu Lee</strong>, Chun Jason Xue, Jen-Ming Wu, and Nan Guan</div>
+                                                        <div class="pubcite">The 45th IEEE Real-Time Systems Symposium (RTSS), To appear, York, UK, December 2024 </div>
+                                                        <span class="label label-primary">Selected</span><span class="label label-warning">Conference Paper</span>
+                                                    </div>     
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> A mixed-criticality (MC) system is a computational
+platform shared by tasks with two or more safety-critical
+levels. An important research topic related to MC systems is
+designing scheduling algorithms that can satisfy the computation
+requirements of tasks with different criticality levels. Numerous
+studies have focused on this topic, but only a few have considered
+parallel tasks. To address the research gap, we propose a dual-
+criticality scheduling algorithm based on federated scheduling
+for parallel tasks with Directed Acyclic Graph (DAG) structures.
+We particularly focus on the task set in which each task has
+a deadline longer than its release period. To the best of our
+knowledge, our work is the first that does not assume the
+constrained- or implicit-deadline in the MC DAG task model.
+In addition to simulation experiments, we demonstrate that our
+algorithm has a capacity augmentation bound of 4, providing a
+quantitative worst-case performance guarantee for our algorithm.
+                                                        </p>
+                                                        <br>
+                                                        <h4>Bibtex</h4>
+                                                        <p>
+                                                        </p>
+                                                        <br>
+                                                        <h4>Conference Information</h4>
+                                                        <p>
+                                                        </p>
+                                                    </div>  
+                                                </div>
+
 
                                                 <div class="item mix cpaper spaper" data-year="202412">
                                                     <div class="pubmain">
@@ -206,6 +257,40 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        Vision-centric Bird’s Eye View (BEV) perception
+has gained popularity for enhancing the situational awareness
+of autonomous vehicles (AVs). It uses multiple cameras to
+create a 360◦ view, capturing essential details for the vehicle’s
+navigation and decision-making. However, reducing the end-to-
+end (e2e) BEV perception latency without sacrificing accuracy
+is challenging due to the lack of co-optimization of message
+communication and object detection. Previous works either
+compress the dense detection model to reduce computation, which
+can hurt accuracy and assume images are well synchronized, or
+focus on worst-case communication delay without considering
+detection characteristics.
+<br>
+To address this challenge, we propose RT-BEV, the first
+framework designed to co-optimize message communication and
+object detection for improving real-time e2e BEV perception
+without sacrificing accuracy. Our main insight lies in generat-
+ing traffic environment- and context-aware Regions of Interest
+(ROIs) for AV safety, combined with ROI-aware message commu-
+nication. RT-BEV features an ROI-aware Camera Synchronizer
+that adaptively determines message groups and allowable delays
+based on ROIs’ coverage. Additionally, we develop the ROIs
+Generator to model context-aware ROIs and a Feature Split
+& Merge component to handle variable-sized ROIs effectively.
+Furthermore, a Time Predictor forecasts timelines for ROIs’
+processing, and a Coordinator jointly optimizes both latency
+and accuracy for the entire e2e pipeline. We have implemented
+RT-BEV in a ROS-based BEV perception pipeline and evaluated
+it with the nuScenes dataset. RT-BEV significantly enhances real-
+time BEV perception by reducing average e2e latency by 1.5×,
+maintaining high mean Average Precision (mAP), doubling the
+number of processed frames, and improving the frame efficiency
+score (FES) by 2.9× compared to existing approaches. Moreover,
+RT-BEV reduces the worst-case e2e latency by 19.3×.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
