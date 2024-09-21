@@ -257,10 +257,10 @@ quantitative worst-case performance guarantee for our algorithm.
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
-                                                        Vision-centric Bird’s Eye View (BEV) perception
+                                                        Vision-centric Bird's Eye View (BEV) perception
 has gained popularity for enhancing the situational awareness
 of autonomous vehicles (AVs). It uses multiple cameras to
-create a 360◦ view, capturing essential details for the vehicle’s
+create a 360 view, capturing essential details for the vehicle's
 navigation and decision-making. However, reducing the end-to-
 end (e2e) BEV perception latency without sacrificing accuracy
 is challenging due to the lack of co-optimization of message
@@ -278,19 +278,19 @@ ing traffic environment- and context-aware Regions of Interest
 (ROIs) for AV safety, combined with ROI-aware message commu-
 nication. RT-BEV features an ROI-aware Camera Synchronizer
 that adaptively determines message groups and allowable delays
-based on ROIs’ coverage. Additionally, we develop the ROIs
+based on ROIs' coverage. Additionally, we develop the ROIs
 Generator to model context-aware ROIs and a Feature Split
 & Merge component to handle variable-sized ROIs effectively.
-Furthermore, a Time Predictor forecasts timelines for ROIs’
+Furthermore, a Time Predictor forecasts timelines for ROIs'
 processing, and a Coordinator jointly optimizes both latency
 and accuracy for the entire e2e pipeline. We have implemented
 RT-BEV in a ROS-based BEV perception pipeline and evaluated
 it with the nuScenes dataset. RT-BEV significantly enhances real-
-time BEV perception by reducing average e2e latency by 1.5×,
+time BEV perception by reducing average e2e latency by 1.5x,
 maintaining high mean Average Precision (mAP), doubling the
 number of processed frames, and improving the frame efficiency
 score (FES) by 2.9× compared to existing approaches. Moreover,
-RT-BEV reduces the worst-case e2e latency by 19.3×.
+RT-BEV reduces the worst-case e2e latency by 19.3x.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
@@ -461,6 +461,22 @@ while providing a timing guarantee, compared to the state-of-the-art real-time M
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p>
+                                                        As the application scope of DNNs executed on microcontroller
+units (MCUs) extends to time-critical systems, it becomes impor-
+tant to ensure timing guarantees for increasing demand of DNN
+inferences. To this end, this paper proposes RT-MDM, the first Real-
+T ime scheduling framework for M ultiple D NN tasks executed on
+an M CU using external memory. Identifying execution-order depen-
+dencies among segmented DNN models and memory requirements
+for parallel execution subject to the dependencies, we propose (i) a
+segment-group-based memory management policy that achieves iso-
+lated memory usage within a segment group and sharded memory
+usage across different segment groups, and (ii) an intra-task sched-
+uler specialized for the proposed policy. Implementing RT-MDM on
+an actual system and optimizing its parameters for DNN segmenta-
+tion and segment-group mapping, we demonstrate the effectiveness
+of RT-MDM in accommodating more DNN tasks while providing
+their timing guarantees
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
